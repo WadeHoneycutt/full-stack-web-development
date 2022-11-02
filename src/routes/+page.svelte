@@ -1,2 +1,17 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import ToDoItem from "../lib/toDoItem.svelte";
+
+    const title = "Todos";
+</script>
+
+<svelte:head>
+    <title>{title}</title>
+</svelte:head>
+<h1>{title}</h1>
+<form action="">
+    <input type="text" name="text" aria-label="Add ToDo" placeholder="+ type to dadd a todo">
+</form>
+
+<ToDoItem/>
+
+
